@@ -16,7 +16,7 @@ activity_main.xml
             </com.google.android.material.textfield.TextInputLayout>
 
 
-  list_item.xml
+  sample_list_item.xml
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -39,7 +39,7 @@ MainActivity.kt
          private val category_items = arrayOf( "Men", "Woman", "Kids", "Accessories", "Sale")
          private lateinit var categorAdapter: ArrayAdapter<String>
 //  category spinner
-            categorAdapter = ArrayAdapter<String> (this@MainActivity, R.layout.list_item,category_items)
+            categorAdapter = ArrayAdapter<String> (this@MainActivity, R.layout.sample_list_item,category_items)
             autoComplete.setAdapter(categorAdapter)
             binding.autoComplete.setOnItemClickListener(object  : OnItemClickListener{
                 override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
