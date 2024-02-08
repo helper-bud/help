@@ -1,0 +1,6 @@
+    <style name="HeadLineText">
+        <item name="android:fontFamily">@font/poppins_extra_bold_italic</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
