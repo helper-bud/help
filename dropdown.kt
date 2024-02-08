@@ -1,4 +1,4 @@
-sample : https://drive.google.com/file/d/1n8ytFKWFGQLUa-b4VefYnjCAeAG9_ElI/view?usp=sharing
+https://drive.google.com/file/d/1n8ytFKWFGQLUa-b4VefYnjCAeAG9_ElI/view?usp=sharing
 activity_main.xml
 <!--spinner category / drop down category-->
             <com.google.android.material.textfield.TextInputLayout
