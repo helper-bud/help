@@ -1,7 +1,9 @@
 // in utils
-private var dialog  : AlertDialog? = null
+object Utils {
+
+    private var dialog  : AlertDialog? = null
     fun showDialog(context: Context, message : String){
-        val progressbar = ProgressDialogBinding.inflate(LayoutInflater.from(context))
+        val progressbar = ProgressDialogLayoutBinding.inflate(LayoutInflater.from(context))
         progressbar.tvtMessage.text = message
         dialog = AlertDialog
             .Builder(context)
@@ -9,13 +11,13 @@ private var dialog  : AlertDialog? = null
             .setCancelable(false)
             .create()
 
-        dialog.show()
+        dialog?.show()
     }
 
     fun hideDialog(){
         dialog?.dismiss()
     }
-
+}
 // xml 
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
